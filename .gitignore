@@ -1,0 +1,9 @@
+# Cache objects
+packer_cache/
+
+#dot directories
+vagrant/.vagrant/
+.vscode/
+
+# For built boxes
+*.box
