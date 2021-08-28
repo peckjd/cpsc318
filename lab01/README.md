@@ -12,11 +12,11 @@ In this lab, you will:
 - check the update history and enabled repositories
 
 ## Lab Instructions
-- Join the Red Hat developers program at developers.redhat.com/register. This program provides you with a free Red Hat subscription and access to basic Red Hat support including their knowledgebase, tutorials, documentation, ebooks, and cheat sheets.
+- Join the Red Hat developers program at [developers.redhat.com/register](developers.redhat.com/register). This program provides you with a free Red Hat subscription and access to basic Red Hat support including their knowledgebase, tutorials, documentation, ebooks, and cheat sheets.
 
--  Sign up for an Amazon Web Services account at aws.amazon.com. 
+-  Sign up for an Amazon Web Services account at [aws.amazon.com](aws.amazon.com). 
 
--  Read through the Amazon Lightsail documentation in the following links. System administration relies on reading documentation and understanding how a service, application, or command works and what options are available to you.
+-  Read through the Amazon Lightsawil documentation in the following links. System administration relies on reading documentation and understanding how a service, application, or command works and what options are available to you.
     - [Frequenty Asked Questions in Amazon Lightsail](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-frequently-asked-questions-faq)
     - [SSH and Connecting to your Lightsail instance](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/understanding-ssh-in-amazon-lightsail)  
     - [Connecting to your Linux or Unix instance in Amazon Lightsail](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-connect-to-your-instance-virtual-private-server)
@@ -84,7 +84,7 @@ Submit answers to the following questions to Canvas.
 
 ## Save your lab
 - Use the following instructions to create a manual snapshot of your instance
-    - [Creating a snapshot of your Linxu or Unix instance in Amazon Lightsail](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-create-a-snapshot-of-your-instance)
+    - [Creating a snapshot of your Linux or Unix instance in Amazon Lightsail](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-create-a-snapshot-of-your-instance)
 - Name your snapshot CPSC318-Lab1.
 - You **should** snapshot your instance at the end of every lab in case there are questions, comments, or concerns regarding your submission.
 
