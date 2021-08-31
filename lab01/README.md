@@ -16,7 +16,7 @@ In this lab, you will:
 
 -  Sign up for an Amazon Web Services account at [aws.amazon.com](aws.amazon.com). 
 
--  Read through the Amazon Lightsawil documentation in the following links. System administration relies on reading documentation and understanding how a service, application, or command works and what options are available to you.
+-  Read through the Amazon Lightsail documentation in the following links. System administration relies on reading documentation and understanding how a service, application, or command works and what options are available to you.
     - [Frequenty Asked Questions in Amazon Lightsail](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-frequently-asked-questions-faq)
     - [SSH and Connecting to your Lightsail instance](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/understanding-ssh-in-amazon-lightsail)  
     - [Connecting to your Linux or Unix instance in Amazon Lightsail](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-connect-to-your-instance-virtual-private-server)
