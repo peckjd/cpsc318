@@ -1,7 +1,7 @@
 # Lab 1 - Lightsail Setup
 
 ## Submission Directions
-Please submit any required answers and OQE to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Peck_Lab1.pdf
+Please submit any required answers and objective quality evidence (OQE) to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Peck_Lab1.pdf
 
 ## Overview
 In this lab, you will:
@@ -60,17 +60,17 @@ Submit answers to the following questions to Canvas.
 
 1. Upgrade your instance so that it the latest version of CentOS. What command did you use?
 
-2. Use yum to show all of the past yum transactions.  What command did you use?
+2. Use `yum` to show all of the past yum transactions.  What command did you use?
 
 3. How many packages were out of date when your instance was launched?
 
-4. What command could you use to show what occurred during a specific yum transaction?
+4. What `yum` command could you use to show what occurred during a specific yum transaction?
 
 5. Use `yum` to show all of the enabled repositories. What command did you use? 
 
 6. How many repositories are enabled?
 
-## OQE 
+## Objective Quality Evidence 
 
 - Clear your terminal using the `clear` command
 
