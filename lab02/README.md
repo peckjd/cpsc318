@@ -19,7 +19,6 @@ In this lab, you will:
 - Enable the yum-cron service: `sudo systemctl enable yum-cron.service`
 - Start the yum-cron service: `sudo systemctl start yum-cron.service`
 - Check the status of yum-cron: `systemctl status yum-cron.service`
-- **OQE**: Take a screenshot of your terminal. It must show the results of the status command.
 
 ### Modify your user preferences
 Your home directory contains configuration files (known as dot files because the filename starts with a '.') that you can modify to tailor a system to your preferences. By default CentOS/RHEL uses the [bash](https://www.gnu.org/software/bash/) shell and it can be customized using the .bashrc file. 
@@ -31,11 +30,10 @@ Your home directory contains configuration files (known as dot files because the
     - Install it locally by modifying your .bashrc file
 - Reload your current shell from your new .bashrc file: `source ~/.bashrc`
 - Notice how your bash prompt changed.
-- **OQE** Take a screenshot of your terminal showing your new bash prompt
-- **QUESTIONS**
-    1. What are the permissions of your .bashrc file?
-    2. Who has permission to edit this file?
-    3. Who has permission to read this file?
+- **QUESTIONS 1-3**
+    - What are the permissions of your .bashrc - file?
+    - Who has permission to edit this file?
+    - Who has permission to read this file?
 
 ### Managing users and groups
 Normally, workstations and servers are joined to a domain that manages user and group creation. We do not have a domain and are going to manually create several users and groups during this lab. 
@@ -67,13 +65,12 @@ The `/etc/skel` directory contains files that are copied to a user's home direct
 - View Joel's groups: `groups joel`
 - View Kenny's groups: `groups kenny`
 - View cpsc318's groups: `groups cpsc318`
-- **OQE** Take a screenshot of your terminal showing the output of all 3 `groups` commands.
 
 ### Check user environments
 - Switch to the Kenny user: `su - kenny`
-- **QUESTION** What happened?
+- **QUESTION 4** What happened?
 - Switch to the Kenny user: `sudo su - kenny`
-- **QUESTION** Did you notice anything different with this login versus cpsc318? Why?
+- **QUESTION 5** Did you notice anything different with this login versus cpsc318? Why?
 - Use one of the following to exit this shell:
     - `exit`
     - `logout`
@@ -85,17 +82,36 @@ The `/etc/skel` directory contains files that are copied to a user's home direct
 - Make sure you are in your home directory: `cd ~`
 - Create a new file: `touch lab2`
 - Check the default permissions: `ls -l lab2`
-- **QUESTION** What are the default permissions for your newly created lab2 file?
+- **QUESTION 6** What are the default permissions for your newly created lab2 file?
 - Change permissions on lab2: `chmod 0600 lab2`
-- **QUESTION** Who has permission to access this file?
+- **QUESTION 7** Who has permission to access this file?
 - Copy this file to /opt: `cp lab2 /opt`
-- **QUESTION** What happened? Why?
+- **QUESTION 8** What happened? Why?
 - Copy this file to /opt: `sudo cp lab2 /opt`
 - Read the file you just copied: `cat /opt/lab2`
-- **QUESTION** What happened? Why?
+- **QUESTION 9** What happened? Why?
 - Change ownership on the copied file: `sudo chown centos /opt/lab2`
 - Read the copied file: `cat /opt/lab2`
-- **QUESTION** What are the new permissions on /opt/lab2?
+- **QUESTION 10** What are the new permissions on /opt/lab2?
+
+## Questions
+
+You should have answered 10 questions while completing this lab.
+
+## OQE
+- Make sure you are the centos user and that your bash prompt is showing the default liquidprompt.
+
+- Clear your terminal using the `clear` command
+
+- Run `sudo systemctl status yum-cron.service`
+
+- Run `cat /etc/skel/.bashrc`
+
+- Run `groups joel; groups kenny; groups cpsc318`
+
+- Run the `date` command to show the current date.
+
+- Take a screenshot of your terminal and submit it to Canvas.
 
 ## Save your lab
 - Take a manual snapshot of your lab. 
