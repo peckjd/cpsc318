@@ -76,7 +76,7 @@ Submit answers to the following questions to Canvas.
 
 - Run the same commands used in questions 2 and 5.
 
-- Run `/cat/etc/redhat-release` to show the CentOS version of your instance.
+- Run `cat /etc/redhat-release` to show the CentOS version of your instance.
 
 - Run the `date` command to show the current date.
 
