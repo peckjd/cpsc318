@@ -53,7 +53,7 @@ There are no questions for this lab.
 
 ## OQE
 
-- Submit your script files to Canvas.
+- Submit your script files and any output files you use to Canvas.
 - Submit one or more screenshots to Canvas showing each scheduled script.
 
 ## Save your lab
