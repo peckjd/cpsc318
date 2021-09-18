@@ -24,7 +24,7 @@ A LAMP stack (Linux, Apache, MySQL, and PHP) is common web development software 
 - Install a LAMP stack using this [Digital Ocean Community tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7)
     - Your public IP address is the static IP you assigned to your instance in lab 1. 
     - Make sure you remember your secure mysql password. You will need it later. 
-    - You can skip the **Install PHP Modules** section. We'll install additional modules later.
+    - You can skip the **Install PHP Modules** section, but make sure you install php. We'll install additional modules later.
     - You do not need to perform the firewall commands. Your instance is protected by an AWS firewall managed using the web interface. 
 
 ### Install Wordpress
