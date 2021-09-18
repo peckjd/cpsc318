@@ -23,7 +23,7 @@ You are going to create several bash scripts. Each script file should be called 
 Skim the man pages for `whois`, `uniq`, `sort`, and `grep`. 
 
 1. Write a script that:
-    - searches `/var/log/httpd/access.log` for all IP addresses that accessed your Wordpress site 
+    - searches `/var/log/httpd/access_log` for all IP addresses that accessed your Wordpress site 
     - uses `whois` to determine what country that IP originated from
     - outputs a list of unique countries that accessed your site to a file located in your home directory
 2. Write a script that:
@@ -34,7 +34,7 @@ Skim the man pages for `whois`, `uniq`, `sort`, and `grep`.
     - outputs a unique list of IP addresses to a file located in your home directory.
     
 ### Example Commands
-- `sudo awk '{print $1}' /var/log/httpd/access.log | sort | uniq`
+- `sudo awk '{print $1}' /var/log/httpd/access_log | sort | uniq`
 - `whois -l 93.94.186.228 | grep 'country' | awk '{print $2}'`
 
 ### Scheduling with Cron and Anacron
