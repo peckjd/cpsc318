@@ -46,7 +46,7 @@ The default timezone is UTC. We want our new servers to default to Eastern Time.
 
 Set the default root password
 - Use the following python to generate a sha512 crypt compatible hash: `python -c 'import crypt,getpass;pw=getpass.getpass();print(crypt.crypt(pw) if (pw==getpass.getpass("Confirm: ")) else exit())'`
-- Add the password hash to your kickstart file by replacing `rootpw --iscrypted !!` with `rootpw --iscrypted [hash]`
+- Add the password hash to your kickstart file by replacing `rootpw --iscrypted !!` with `rootpw --iscrypted [hash]` where `[hash]` is the password hash generated in the previous step. 
 
 ## Questions
 
