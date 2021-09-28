@@ -1,4 +1,4 @@
-# Lab 5 - Scripted Wordpress Installation
+# Lab 6 - Ansible Wordpress Installation
 
 ## Submission Directions
 Please submit any required answers and OQE to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Peck_Lab6.pdf
