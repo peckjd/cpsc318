@@ -1,0 +1,9 @@
+---
+
+  - name: Install Wordpress
+    gather_facts: false
+    hosts: localhost
+    become: true
+    tasks:
+      - debug:
+          msg: "Use this playbook to install LAMP, wordpress, and create the users and groups from lab 2."
