@@ -1,7 +1,7 @@
-# Lab 6 -  Wordpress Containers
+# Lab 7 -  Wordpress Containers
 
 ## Submission Directions
-Please submit any required answers and OQE to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Peck_Lab6.pdf
+Please submit any required answers and OQE to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Peck_Lab7.pdf
 
 ## Overview
 In this lab, you will practice using containers and then use docker-compose to publish Wordpress.
