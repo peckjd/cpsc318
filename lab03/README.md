@@ -52,7 +52,7 @@ Set the default root password
 2. Using the [Lightsail website](https://lightsail.aws.amazon.com/), what services are enabled by default in your instance's firewall?
 3. What is the public IP for your wordpress site?
 
-## Kickstart
+### Kickstart
 
 - Submit your kickstart to Canvas as a plain text file
 
