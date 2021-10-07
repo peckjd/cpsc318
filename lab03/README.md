@@ -1,8 +1,5 @@
 # Lab 3 - Manual Wordpress Installation
 
-## Submission Directions
-Please submit any required answers and OQE to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Allwine_Lab3.pdf
-
 ## Overview
 In this lab, you will:
 - Install a LAMP stack
@@ -10,8 +7,8 @@ In this lab, you will:
 - Create and modify a kickstart file
 
 ## Lab Instructions
-### Enable repositories for PHP 7.4
 
+### Enable repositories for PHP 7.4
 A LAMP stack (Linux, Apache, MySQL, and PHP) is common web development software stack. CentOS 7 installs PHP 5.4, which is [no longer supported by Wordpress](https://displaywp.com/wordpress-minimum-php-version/). We're going to use Remi's Repository, which is run by a PHP packager. 
 
 - Install the Extra Packages for Enterprise Linux (EPEL) Reposistory: `sudo yum install -y epel-release`
@@ -48,15 +45,16 @@ Set the default root password
 - Use the following python to generate a sha512 crypt compatible hash: `python -c 'import crypt,getpass;pw=getpass.getpass();print(crypt.crypt(pw) if (pw==getpass.getpass("Confirm: ")) else exit())'`
 - Add the password hash to your kickstart file by replacing `rootpw --iscrypted !!` with `rootpw --iscrypted [hash]` where `[hash]` is the password hash generated in the previous step. 
 
-## Questions
+## Submission Directions
+### Questions
+- Submit answers to the following questions to Canvas as a doc, docx, txt, or pdf file.
+1. Were you able to see the default Apache configuration page after you started the Apache service? Why or why not?
+2. Using the [Lightsail website](https://lightsail.aws.amazon.com/), what services are enabled by default in your instance's firewall?
+3. What is the public IP for your wordpress site?
 
-- **QUESTION 1** Were you able to see the default Apache configuration page after you started the Apache service? Why or why not?
-- **QUESTION 2** Using the [Lightsail website](https://lightsail.aws.amazon.com/), what services are enabled by default in your instance's firewall?
-- **QUESTION 3** What is the public IP for your wordpress site?
+## Kickstart
 
-## OQE
-
-- Submit your kickstart to canvas.
+- Submit your kickstart to Canvas as a plain text file
 
 ## Save your lab
 - Take a manual snapshot of your lab. 

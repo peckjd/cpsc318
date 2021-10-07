@@ -1,8 +1,5 @@
 # Lab 6 - Ansible Wordpress Installation
 
-## Submission Directions
-Please submit any required answers and OQE to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Peck_Lab6.pdf
-
 ## Overview
 In this lab, you will create a playbook that will install Wordpress on a CentOS 7 server. 
 
@@ -66,14 +63,9 @@ In this lab, you will create a playbook that will install Wordpress on a CentOS 
 - [Digital Ocean LAMP Install Community tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-7)
 - [Digital Ocean Wordpress Install Community tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-centos-7)
 
+## Submission Instructions
 
-## Questions
-
-- There are no questions for this lab.
-
-## OQE
-
-- Submit your wordpress playbook to Canvas.
+- Submit your wordpress playbook to Canvas as a yml file.
 
 ## Snapshot
 

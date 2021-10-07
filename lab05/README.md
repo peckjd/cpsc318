@@ -1,8 +1,5 @@
 # Lab 5 - Scripted Wordpress Installation
 
-## Submission Directions
-Please submit any required answers and OQE to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Peck_Lab5.pdf
-
 ## Overview
 In this lab, you will:
 - Write a bash script that installs a LAMP stack and wordpress
@@ -48,13 +45,9 @@ Reference:
     - You can also monitor /var/log/messages
 - After completion, open a browser and go to the new instance's IP. You should see the wordpress configuration page
 
-## Questions
+## Submission Instructions
 
-- There are no questions for this lab.
-
-## OQE
-
-- Submit your bash script to Canvas.
+- Submit your bash script to Canvas as a plain text file.
 
 ## Save your lab
 

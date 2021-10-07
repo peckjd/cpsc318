@@ -1,8 +1,5 @@
 # Lab 2 - Users and Permissions
 
-## Submission Directions
-Please submit any required answers and OQE to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Allwine_Lab2.pdf
-
 ## Overview
 In this lab, you will:
 - Install and configure yum-cron
@@ -94,24 +91,20 @@ The `/etc/skel` directory contains files that are copied to a user's home direct
 - Read the copied file: `cat /opt/lab2`
 - **QUESTION 10** What are the new permissions on /opt/lab2?
 
-## Questions
+## Submission Instructions
 
-You should have answered 10 questions while completing this lab.
+### Questions
+- You should have answered 10 questions while completing this lab. Submit your answers to Canvas as a doc, docx, txt, or pdf. 
 
-## OQE
-- Make sure you are the centos user and that your bash prompt is showing the default liquidprompt.
-
-- Clear your terminal using the `clear` command
-
-- Run `sudo systemctl status yum-cron.service`
-
-- Run `cat /etc/skel/.bashrc`
-
-- Run `groups joel; groups kenny; groups cpsc318`
-
-- Run the `date` command to show the current date.
-
-- Take a screenshot of your terminal and submit it to Canvas.
+### Screenshot
+- Take a screenshot of your terminal after running the following commands. 
+    - Make sure you are the centos user and that your bash prompt is showing the default liquidprompt.
+    - Clear your terminal using the `clear` command
+    - Run `sudo systemctl status yum-cron.service`
+    - Run `cat /etc/skel/.bashrc`
+    - Run `groups joel; groups kenny; groups cpsc318`
+    - Run the `date` command to show the current date.
+- Submit your screenshot to Canvas as a jpg, jpeg, or png.
 
 ## Save your lab
 - Take a manual snapshot of your lab. 

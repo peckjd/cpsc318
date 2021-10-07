@@ -1,8 +1,5 @@
 # Lab 1 - Lightsail Setup
 
-## Submission Directions
-Please submit any required answers and objective quality evidence (OQE) to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Peck_Lab1.pdf
-
 ## Overview
 In this lab, you will:
 - register for a Red Hat Developer account
@@ -55,8 +52,10 @@ In this lab, you will:
 
     `yum` requires elevated permissions. You are a regular user by default and will need to use `sudo`. For example, `sudo yum [options]`. We will discuss `sudo` and permissions in a future class.
 
-## Questions
-Submit answers to the following questions to Canvas.
+## Submission Instructions
+
+### Questions
+- Submit answers to the following questions to Canvas as a doc, docx, txt, or pdf. 
 
 1. Upgrade your instance so that it the latest version of CentOS. What command did you use?
 
@@ -70,23 +69,19 @@ Submit answers to the following questions to Canvas.
 
 6. How many repositories are enabled?
 
-## Objective Quality Evidence 
-
-- Clear your terminal using the `clear` command
-
-- Run the same commands used in questions 2 and 5.
-
-- Run `cat /etc/redhat-release` to show the CentOS version of your instance.
-
-- Run the `date` command to show the current date.
-
-- Take a screenshot of your terminal and submit it to Canvas.
+### Screenshot
+- Take a screenshot of your terminal after running the following commands. 
+    - Clear your terminal using the `clear` command
+    - Run the same commands used in questions 2 and 5.
+    - Run `cat /etc/redhat-release` to show the CentOS version of your instance.
+    - Run the `date` command to show the current date.
+- Submit the screenshot to Canvas as a jpg, jpeg, or png.
 
 ## Save your lab
 - Use the following instructions to create a manual snapshot of your instance
     - [Creating a snapshot of your Linux or Unix instance in Amazon Lightsail](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/lightsail-how-to-create-a-snapshot-of-your-instance)
 - Name your snapshot CPSC318-Lab1.
-- You **should** snapshot your instance at the end of every lab in case there are questions, comments, or concerns regarding your submission.
+- You **should** snapshot your instance at the end of a lab in case there are questions, comments, or concerns regarding your submission.
 
 
 

@@ -1,8 +1,5 @@
 # Lab 4 - Bash scripting
 
-## Submission Directions
-Please submit any required answers and OQE to Canvas. Text answers should be submitted as doc, docx, or pdf. Images should be submitted as jpg or png. Documents should be named **LastName_LabNumber**. For example, Allwine_Lab4.pdf
-
 ## Overview
 In this lab, you will:
 - write several bash scripts
@@ -46,15 +43,13 @@ Now you are going to schedule the scripts you've written. Make sure your scripts
 - Schedule script 2 to run weekly using cron.
 - Schedule script 3 to run monthly using anacron.
 
-
-## Questions
-
-There are no questions for this lab.
-
-## OQE
+## Submission Instructions
 
 - Submit your script files and any output files you use to Canvas.
+    - The script files must be in plain text 
+    - Any output files must be plain text files
 - Submit one or more screenshots to Canvas showing each scheduled script.
+    - Each screenshot should be a jpg, jpeg, or png file.
 
 ## Save your lab
 - Take a manual snapshot of your lab. 
