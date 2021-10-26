@@ -38,7 +38,7 @@ In this lab, you will use [dig](https://linux.die.net/man/1/dig), [whois](https:
 
 5. [Modify](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-editing-firewall-rules) your lightsail instance to allow traffic to port 1234. 
     - Open 2 terminals/connections to your lightsail instance. 
-    - In the first terminal, run `nc -l -p 12341`
+    - In the first terminal, run `nc -l -p 1234`
     - In the second terminal run `nc 127.0.0.1 1234` then type `hello, world` and hit Enter/Return
     - What happened? Using the nc man page, what are the -l and -p options?
     - Use ctrl+c to stop both nc commands. 
