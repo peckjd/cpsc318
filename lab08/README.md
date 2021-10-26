@@ -50,7 +50,7 @@ In this lab, you will use [dig](https://linux.die.net/man/1/dig), [whois](https:
     - What happened? Use the nc man page to explain what occurred.
     - Run the same command using port 81. What happened? Why do you think this occurred?
 
-7. Run `echo -e "GET / HTTP / 1.0\n\n" nc TRITIUM_MAIL_SERVER 80 | less`
+7. Run `echo -e "GET / HTTP/1.0\n\n" nc TRITIUM_MAIL_SERVER 80 | less`
     - What happenend? What information was returned? Do no simply copy and paste the data. Explain what it is. What important pieces of information are included?
     - Check the same IP address with `curl`. What information was returned?
 
