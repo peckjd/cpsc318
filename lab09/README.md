@@ -29,7 +29,7 @@ You should use the IP address of the target system(s) instead of the domain name
 
 2. Perform a connect scan on mail.tritiuminc.com. 
 
-3. Perform a UDP scan on mail.tritiuminc.com. Include the flag `-F --version intensity 0` (this may take a while). 
+3. Perform a UDP scan on mail.tritiuminc.com. Include the flag `-F --version-intensity 0` (this may take a while). 
 
 4. Perform a FIN scan on mail.tritiuminc.com. 
 
