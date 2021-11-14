@@ -29,8 +29,8 @@ In this lab, you will use well known tools to scan for vulnerabilities and confi
 
 #### Create a Nessus Scan
 - Open a browser and go to the Nessus UI. Nessus defaults to using a self signed certificate. You will need to accept the warning in your browser in order to proceed.
-  - Using Docker Desktop: `https:\\localhost:8834`
-  - Using Lightsail: `https:\\<lightsail IP>:8834`
+  - Using Docker Desktop: `https://localhost:8834`
+  - Using Lightsail: `https://<lightsail IP>:8834`
 - Log in to Nessus using the username and password you saved in the .env file
 - If prompted, cancel the host discovery scan.
 - Click **New Scan** in the upper right corner
@@ -54,7 +54,8 @@ In this lab, you will use well known tools to scan for vulnerabilities and confi
 - Click the **Launch** dropdown and select **default**
   - This scan will take a few minutes to complete
 - After the scan completes, click **Report**
-- Select **Detailed Vulnerabilities by Host**
+- Select `PDF` for **Report Format**
+- Select `Detailed Vulnerabilities by Host` for **Report Template**
 - Click **Generate Report**
 - Close your browser
 
