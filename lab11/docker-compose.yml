@@ -7,8 +7,8 @@ services:
     restart: always
     container_name: nessus
     environment:
-      USERNAME: $USER
-      PASSWORD: $PASSWORD
-      ACTIVATION_CODE: $CODE
+      USERNAME: $NESSUS_USER
+      PASSWORD: $NESSUS_PASSWORD
+      ACTIVATION_CODE: $NESSUS_CODE
     ports:
       - 8834:8834
