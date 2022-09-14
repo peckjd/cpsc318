@@ -27,14 +27,15 @@ Skim the man pages for `whois`, `uniq`, `sort`, and `grep`.
     - searches `/var/log/secure` for all users who attempted to ssh to your instance.
     - outputs a unique list of reverse alphabetically sorted users to a file located in your home directory.
 3. Write a script that:
-    - searches `/var/log/secure` for all IP addresses that attempted to ssh to your instance
-    - uses `whois` to determine what country that IP originated from
-    - outputs a unique list of IP addresses and associated country to a file located in your home directory.
-        - IP addresses and countries should be separated by a comma: e.g `8.8.8.8,US`
+    - searches `/var/log/secure` for all IP addresses that attempted to ssh to your instance with an invalid account name
+    - uses `whois` to determine where abuse notifications (abuse-mailbox) should be sent for that IP address
+    - outputs a unique list of IP addresses and emails to a file located in your home directory.
+        - IP addresses and emails should be separated by a comma: `1.1.1.1,helpdesk@apnic.net`
+        - *NOTE* not all IP addresses will have an abuse-mailbox entry. In that case, output the IP followed by a comma: `1.1.1.1,`
 
 ### Example Commands
 - `sudo awk '{print $1}' /var/log/httpd/access_log | sort | uniq`
-- `whois -l 8.8.8.8 | grep 'country' | awk '{print $2}'`
+- `whois 8.8.8.8 | grep 'country' | awk '{print $2}'`
 
 ### Scheduling with Cron and Anacron
 
