@@ -7,7 +7,7 @@ In this lab, you will create a playbook that will install Wordpress on a CentOS 
 
 ### Setup
 
-- Creat a brand new CentOS 7 lightsail instance
+- Create a brand new CentOS 7 lightsail instance
     - **DO NOT** update the instance yet
 - Install and enable the EPEL repository
     - `sudo yum install -y epel-release`
@@ -21,11 +21,9 @@ In this lab, you will create a playbook that will install Wordpress on a CentOS 
 - There are 2 files in this directory:
     - `update-all.yml` an ansible playbook that updates all packages on a system and installs and enables yum-cron
     - `wordpress.yml` an empty ansible playbook
-- Run `ansible-playbook -v update-all.yml`
-
+- Run `ansible-playbook --verbose update-all.yml`
 
 ### Write your playbook
-
 - Use the resources below to update the `wordpress.yml` playbook so that it:
     - Enables EPEL and Remi's PHP repositories
     - Installs and enables a LAMP stack
@@ -36,13 +34,15 @@ In this lab, you will create a playbook that will install Wordpress on a CentOS 
 
 ### Test your playbook 
 - Validate your playbook syntax with `ansible-playbook wordpress.yml --syntax-check` 
-- Run your playbook in check mode with `ansible-playbook -v -C wordpress.yml` 
+- Run your playbook in check mode with `ansible-playbook --verbose --check wordpress.yml` 
+    - Remember: check mode does not make any changes to the target system(s)
 
 ### Execute your playbook
-- Run your playbook with `ansible-playbook -v wordpress.yml` 
+- Run your playbook with `ansible-playbook --verbose wordpress.yml` 
 - Open a browser on your personal machine and go to your instance's public IP address. You should be prompted to continue setting up wordress
 
 ### Resources
+- There are additional resources on Canvas.
 - [Ansible Documentation](https://docs.ansible.com/ansible/2.9/modules/modules_by_category.html)
     - Make sure you are using the documentation that matches the installed Ansible version 
     - Use the drop down in the upper left to select 2.9
