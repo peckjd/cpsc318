@@ -21,13 +21,17 @@ In this lab, you will create a playbook that will install Wordpress on a CentOS 
 - There are 2 files in this directory:
     - `update-all.yml` an ansible playbook that updates all packages on a system and installs and enables yum-cron
     - `wordpress.yml` an empty ansible playbook
-- Run `ansible-playbook --verbose update-all.yml`
+- Run `ansible-playbook --verbose update-all.yml` to fully update this instance
 
 ### Write your playbook
-- Use the resources below to update the `wordpress.yml` playbook so that it:
+- Use the resources below to modify the `wordpress.yml` playbook so that it:
     - Enables EPEL and Remi's PHP repositories
     - Installs and enables a LAMP stack
     - Installs and configures Wordpress
+        - Your playbook will need to install the following packages before you can use the mysql_user and mysql_db modules
+          - MySQL-python
+          - mysql-connector-python
+          - python2-PyMySQL
     - Creates the users and groups from lab 2 with the correct memberships
         - Users: cpsc318, joel, kenny
         - Groups: joel, kenny, umw, cpsc318
@@ -42,7 +46,7 @@ In this lab, you will create a playbook that will install Wordpress on a CentOS 
 - Open a browser on your personal machine and go to your instance's public IP address. You should be prompted to continue setting up wordress
 
 ### Resources
-- There are additional resources on Canvas.
+- There are additional resources on Canvas in addition to what is listed here.
 - [Ansible Documentation](https://docs.ansible.com/ansible/2.9/modules/modules_by_category.html)
     - Make sure you are using the documentation that matches the installed Ansible version 
     - Use the drop down in the upper left to select 2.9
