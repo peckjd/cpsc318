@@ -16,7 +16,7 @@ Create a bash script that will:
 - Install Wordpress
 
 Helpful Hints
-- Use `mysql -u root -e <command>` to execute database commands
+- Use `mysql -u root -e "<command>"` to execute database commands
 - Use `sed` to edit wp-config.php
 - You **do not** need to run `mysql_secure_installation`. 
     - This will leave the default root password blank. 
