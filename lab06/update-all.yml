@@ -1,27 +1,31 @@
 ---
 
-- name: Update machine
-  gather_facts: false
-  hosts: localhost
-  become: true
+- name: Update machine # The name of our playbook
+  gather_facts: false # This command gathers facts about the system and is not needed for this playbook
+  hosts: localhost # We are targeting localhost. This could also be a hostname or group from our inventory
+  become: true # This tells ansible to use privilege escalation (e.g sudo) when needed
   tasks:
 
-    - name: Update all packages
-      package:
-        name: '*'
-        state: latest
+    # This task is the same as "yum upgrade -y"
+    - name: Update all packages # The name of the task
+      package: # The ansible module used by the task
+        name: '*' # A module parameter
+        state: latest # another module parameter
 
+    # This task is the same as "yum install -y yum-cron "
     - name: Install yum-cron
       package:
         name: yum-cron
         state: latest
 
+    # This task is the same as "sed -i s/apply_updates = no/apply_updates = yes/ /etc/yum/yum-cron.conf"
     - name: Edit /etc/yum/yum-cron.conf
       replace:
         path: /etc/yum/yum-cron.conf
         regexp: "apply_updates = no"
         replace: "apply_updates = yes"
 
+    # This task is the same as "systemctl enable yum-cron; systemctl start yum-cron"
     - name: Start and enable yum-cron
       service:
         name: yum-cron
