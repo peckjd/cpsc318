@@ -20,11 +20,13 @@ In this lab, you will practice using containers and then use docker-compose to p
     - Make sure you stop any running containers after you finish
 
 ### Containerize Wordpress
-- Use docker-compose to start a Wordpress application stack
-    - Use the example stack.yml file for wordpress from https://hub.docker.com/_/wordpress
-    - Expose Wordpress on port 80 otherwise you will need to modify your Lighstail instance's firewall.
+- Clone the course repository: https://github.com/peckjd/CPSC318
+- Use docker-compose to start a Wordpress application stack using the docker-compose.yml file in the lab07 directory
+    - `docker-compose up -d` 
+    - **Lightsail/Linux only** Change the wordpress port to 80 otherwise you will need to modify your Lighstail instance's firewall.
     - Use a browser to make sure wordpress is reachable on localhost or your Lightsail instance's public IP
-- Modify your wordpress docker-compose file to add healthchecks for both containers (app and db)
+- Modify the docker-compose.yml wordpress file to add healthchecks for both the app and db containers
+    - A health check is used to determine if a running container is in a healthy state. In our case, we should check to see if our wordpress container is correctly publishing a website and that our db container has a running database.
     - The Compose file reference is https://docs.docker.com/compose/compose-file/
     - You will need to restart the containers using docker-compose after adding the health checks
         - `docker-compose up -d` or `docker-compose up -d --force-recreate`
@@ -33,6 +35,7 @@ In this lab, you will practice using containers and then use docker-compose to p
 
 - Submit your wordpress docker-compose file to Canvas as a yml file.
     - Include a link to your docker hub profile as a comment
+    - You created this profile during the *Sharing Our App* section of the Docker tutorial
 - Submit an additional document comparing and contrasting the 4 installation techniques we've used for installing Wordpress: manually, scripted with Bash, configuration management with Ansible, and using containers. Include scenarios where a system administrator might choose to implement each option or a hybrid of 2 or more approaches. 
     - This document must be at least 250 words in length
     - This document must be a doc, docx, txt, or pdf file.
