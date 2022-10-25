@@ -35,7 +35,7 @@ In this lab, you will practice using containers and then use docker-compose to p
 
 - Submit your wordpress docker-compose file to Canvas as a yml file.
     - Include a link to your docker hub profile as a comment
-    - You created this profile during the *Sharing Our App* section of the Docker tutorial
+    - You created this profile during the *Sharing Our App* section of the Docker tutorial and should take the form `https://hub.docker.com/u/USERNAME` where USERNAME is your username.
 - Submit an additional document comparing and contrasting the 4 installation techniques we've used for installing Wordpress: manually, scripted with Bash, configuration management with Ansible, and using containers. Include scenarios where a system administrator might choose to implement each option or a hybrid of 2 or more approaches. 
     - This document must be at least 250 words in length
     - This document must be a doc, docx, txt, or pdf file.
