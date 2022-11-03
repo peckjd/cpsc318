@@ -43,7 +43,7 @@ AIDE is an intrusion detection system that is used to monitor for changes made t
 
 DISA publishes [Security Technical Implementation Guides](https://public.cyber.mil/stigs/) which are configuration standards for securing operating systems. We're going to apply the RHEL 7 STIG to our CentOS instance using a DISA provided ansible playbook. 
 
-- `wget https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RHEL_7_V3R5_STIG_Ansible.zip`
+- `wget https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RHEL_7_V3R9_STIG_Ansible.zip`
 - `unzip U_RHEL_7_V3R5_STIG_Ansible.zip`
 - `unzip rhel7STIG-ansible.zip -d rhel7STIG-ansible`
 
