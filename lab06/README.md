@@ -28,13 +28,10 @@ In this lab, you will create a playbook that will install Wordpress on a CentOS 
     - Enables EPEL and Remi's PHP repositories
     - Installs and enables a LAMP stack
     - Installs and configures Wordpress
-        - Your playbook will need to install the following packages before you can use the mysql_user and mysql_db modules
+        - Your playbook will need to install the following packages before you can use the [mysql_user](https://docs.ansible.com/ansible/2.9/modules/mysql_user_module.html) and [mysql_db](https://docs.ansible.com/ansible/2.9/modules/mysql_db_module.html) Ansible modules
           - MySQL-python
           - mysql-connector-python
           - python2-PyMySQL
-    - Creates the users and groups from lab 2 with the correct memberships
-        - Users: cpsc318, joel, kenny
-        - Groups: joel, kenny, umw, cpsc318
 
 ### Test your playbook 
 - Validate your playbook syntax with `ansible-playbook wordpress.yml --syntax-check` 
