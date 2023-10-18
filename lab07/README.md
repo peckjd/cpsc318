@@ -6,7 +6,8 @@ In this lab, you will practice using containers and then use docker-compose to p
 ## Lab Instructions
 
 ### Setup
-- Follow the [official instructions](https://docs.docker.com/engine/install/) to install Docker Engine on either your person laptop or desktop or a Lightsail instance
+- Follow the [official instructions](https://docs.docker.com/engine/install/) to install Docker Engine
+    - We recommend installing Docker Desktop on your personal computer given the resource constraints on the Lightsail instances
 - **Lightsail/Linux only** Add your user to the docker group to avoid needing to sudo every docker command
     - `sudo usermod -a -G docker <username>`
     - Log out and back in so the user's groups are updated
@@ -36,9 +37,6 @@ In this lab, you will practice using containers and then use docker-compose to p
 - Submit your wordpress docker-compose file to Canvas as a yml file.
     - Include a link to your docker hub profile as a comment
     - You created this profile during the *Sharing Our App* section of the Docker tutorial and should take the form `https://hub.docker.com/u/USERNAME` where USERNAME is your username.
-- Submit an additional document comparing and contrasting the 4 installation techniques we've used for installing Wordpress: manually, scripted with Bash, configuration management with Ansible, and using containers. Include scenarios where a system administrator might choose to implement each option or a hybrid of 2 or more approaches. 
-    - This document must be at least 250 words in length
-    - This document must be a doc, docx, txt, or pdf file.
 
 ## Snapshot
 
